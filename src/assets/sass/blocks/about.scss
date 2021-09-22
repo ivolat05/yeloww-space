@@ -98,7 +98,7 @@
 .about__side{
     position: relative;
     img{
-        width: 524px;
+        width: 484px;
         height: 456px;
     }
     a{
@@ -113,4 +113,116 @@
             color: #fff;
         }
     }
+}
+
+@media(max-width:1701px){
+    .about__block {
+    display: inline-table;
+    width: 355px;
+    height: 253px;}
+    .about__side img {
+    width: 360px;
+    height: 345px;
+}
+.about-center img{
+    width: 335px;
+    height: 280px;
+    top: 0;
+}
+
+.about-center a {
+    font-size: 66px;
+    line-height: 70px;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    padding:13px 5px;
+    border-bottom: 1px solid #000;
+    transition: .4s;}
+
+    .about__block:nth-child(2) a {
+    left: 79px;
+}
+}
+
+@media(max-width: 1400px){
+        .about__block {
+    display: inline-table;
+    width: 250px;
+    height: 253px;}
+    .about__side img {
+    width: 260px;
+    height: 345px;
+}
+.about-center img{
+    width: 250px;
+    height: 230px;
+    top: 0;
+    left: -3px;
+}
+.about-center a {
+    font-size: 35px;
+    line-height: 70px;
+  
+    padding: 23px 0;
+   }
+   .about-center{
+       padding: 0 10px;
+   }
+
+   .about__block a {
+    font-size: 30px;
+    line-height: 30px;}
+}
+
+@media(max-width: 1200px){
+         .about__block {
+    display: inline-table;
+    width: 230px;
+    height: 253px;}
+    
+    .about__side img {
+    width: 230px;
+    height: 345px;
+}
+.about-center img{
+    width: 230px;
+    height: 230px;
+    top: 0;
+    left: 0;
+}
+.about-center a {
+    font-size: 35px;
+    line-height: 70px;
+  
+    padding: 28px 5px;
+   }
+
+  .about-center {
+      padding: 0 10px;
+  }
+    .about__block a {
+    font-size: 20px;
+    line-height: 20px;
+}
+}
+
+@media(max-width: 992px){
+    .about{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about__side {
+        width: 100%;
+    }
+    .about__side img {
+    width: 100%;
+}
+
+.about__block:nth-child(2) a {
+    top: 65px;
+    left: 86px;
+}
 }
