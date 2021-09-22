@@ -1,0 +1,54 @@
+.latest{
+    background: url('../../assets/img/up.png') no-repeat top 0 left 0,
+    url('../../assets/img/line-1.png') no-repeat top 15px left,
+url('../../assets/img/line-2.png') no-repeat top 110px right 30px,
+url('../../assets/img/line-2.png') no-repeat top 25% center,
+url('../../assets/img/line-1.png') no-repeat top 50% right 20%,
+url('../../assets/img/line-3.png') no-repeat bottom 18%  left,
+url('../../assets/img/line-1.png') no-repeat bottom  right,
+url('../../assets/img/down.png') no-repeat bottom  right 20px;
+    
+    padding: 130px 15px 150px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.latest__box{
+    display: block;
+    max-width: 737px;
+    padding: 30px 30px 35px;
+    background:#fff9af;
+    margin-bottom: 55px;
+    h2{
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 45px;
+        color: #000;
+        padding-bottom: 10px;
+    }
+
+    p{
+        font-family: 'Myriad Pro';
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 22px;
+        padding-bottom: 20px;
+         color: #000;
+    }
+    
+}
+
+.latest__box-inner{
+    img{
+        float: left;
+        margin-right: 15px;
+    }
+    p{
+        font-family: 'Times New Roman';
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 45px; 
+        color: #000;
+    }
+}
