@@ -1,0 +1,116 @@
+.about{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+
+.about__block{
+    display: inline-table;
+    width: 475px;
+    height: 453px;
+    position: relative;
+    img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        position:relative;
+        z-index: 0;
+    }
+
+    a{
+        font-size: 55px;
+        line-height: 66px;
+        display: block;
+        color: #000;
+    }
+
+    &:nth-child(2){
+        a{
+            position: absolute;
+            transform: rotate(-90deg);
+                top: 92px;
+    left: 153px;
+            z-index: 1;
+        }
+        
+    }
+
+    &:nth-last-child(2){
+        a{       
+        position: absolute;
+        left: 50%;
+        bottom: 40%;
+        transform: translateX(-50%);
+        z-index: 1;
+        transition: .4s;
+        
+        }
+        
+    }
+
+}
+
+
+.about-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:8px solid #000;
+    position: relative;
+    
+    img{
+        position: absolute;
+        width: 447px;
+        height: 427px;
+        margin: 5px;
+        border:3px solid #000;
+        background: #fff;
+            z-index: 0;
+        }
+    a{
+        font-weight: 300;
+        font-size: 96px;
+        line-height: 115px;
+        color: #000;
+        position: relative;
+        z-index: 1;
+        padding: 12px;
+        
+        border-bottom: 1px solid #000;
+
+        transition: .4s;
+        &:nth-child(1){
+            letter-spacing: 16px;
+        }
+        &:nth-child(2){
+                    letter-spacing: 26px;
+                }
+        &:nth-child(3){
+                    letter-spacing: 20px;
+                }
+         &:hover{
+                background: #fad3d6;
+            }
+    }
+}
+
+.about__side{
+    position: relative;
+    img{
+        width: 524px;
+        height: 456px;
+    }
+    a{
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+        &:hover{
+            background: none;
+            color: #fff;
+        }
+    }
+}

@@ -1,21 +1,45 @@
-@import"../sass/vendor/reset";
+@import "../sass/vendor/reset";
+@import "../sass/vendor/font";
 
 *{
     box-sizing: border-box;
+    font-family: 'Helvetica';
 }
 
 a {
     text-decoration: none;
+    transition: .4s;
+    &:hover{
+     
+            background: #fad3d6;
+    }
 }
 
 ul {
     list-style: none;
 }
 
-.container{
-    padding: 0 15px;
-    margin: 0 auto;
-    max-width: 1400px;
-}
 
-@import"../sass/blocks/header";
+/*-bootstrap-*/
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/_containers";
+
+@import "../sass/blocks/header";
+@import "../sass/blocks/page";
+@import "../sass/blocks/menu";
+@import "../sass/blocks/about.scss";
+
+.container{
+    border: 1px solid #000;
+    margin: 45px auto 70px;
+    position: relative;
+}
+@media (min-width: 1900px){
+.container{
+    max-width: 1840px;
+    
+}
+}

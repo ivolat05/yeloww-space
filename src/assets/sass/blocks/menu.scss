@@ -1,0 +1,27 @@
+.menu__list{
+    display: flex;
+    justify-content: end;  
+    
+}
+
+.menu__list-inner{
+    a{
+        font-weight: 500;
+        font-size: 31px;
+        line-height: 37px;
+        color: #000;
+        display: block;
+        padding: 70px 40px 35px 40px;
+
+        &:hover{
+            background: none;
+            border: 1px solid #000;
+        }
+    }
+}
+
+.active{
+    a{
+        border: 1px solid #000;
+    }
+}
